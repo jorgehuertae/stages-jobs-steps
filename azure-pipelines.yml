@@ -34,4 +34,3 @@ stages:
         displayName: Build REACT APP for PROD
       - job: BuildNodeApp
         displayName: Build NODE APP for PROD
-
