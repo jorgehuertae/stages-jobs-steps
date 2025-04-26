@@ -10,6 +10,11 @@ stages:
     jobs:
       - job: BuildMobileApp
         displayName: Build APP for DEV
+        steps:
+          - script: echo building mobile application
+            displayName: Building Mobile APP
+          - script: echo running unit tests
+            displayName: Running unit tests
       - job: BuildReactApp
         displayName: Build REACT for DEV
       - job: BuildNodeApp
