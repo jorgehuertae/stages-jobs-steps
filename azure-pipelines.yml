@@ -21,9 +21,9 @@ stages:
       - job: BuildMobileApp
         displayName: Build MOBILE APP for STAGING
       - job: BuildReactApp
-        displayName: Build MOBILE APP for STAGING
+        displayName: Build REACT APP for STAGING
       - job: BuildNodeApp
-        displayName: Build MOBILE APP for STAGING
+        displayName: Build NODE APP for STAGING
 
   - stage: BuildProd
     displayName: Build for PROD
@@ -31,7 +31,7 @@ stages:
       - job: BuildMobileApp
         displayName: Build MOBILE APP for PROD
       - job: BuildReactApp
-        displayName: Build MOBILE APP for PROD
+        displayName: Build REACT APP for PROD
       - job: BuildNodeApp
-        displayName: Build MOBILE APP for PROD
+        displayName: Build NODE APP for PROD
 
