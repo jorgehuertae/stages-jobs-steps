@@ -17,25 +17,65 @@ stages:
             displayName: Running unit tests
       - job: BuildReactApp
         displayName: Build REACT for DEV
+        steps:
+          - script: echo building REACT application
+            displayName: Building REACT APP
+          - script: echo running unit tests
+            displayName: Running unit tests
+
       - job: BuildNodeApp
         displayName: Build NODE for DEV
-
+        steps:
+          - script: echo building NODE application
+            displayName: Building NODE APP
+          - script: echo running unit tests
+            displayName: Running unit tests
   - stage: BuildStaging
     displayName: Build for STAGING
     jobs:
       - job: BuildMobileApp
         displayName: Build MOBILE APP for STAGING
+        steps:
+          - script: echo building MOBILE application
+            displayName: Building MOBILE APP
+          - script: echo running unit tests
+            displayName: Running unit tests
       - job: BuildReactApp
         displayName: Build REACT APP for STAGING
+        steps:
+          - script: echo building REACT application
+            displayName: Building REACT APP
+          - script: echo running unit tests
+            displayName: Running unit tests        
       - job: BuildNodeApp
         displayName: Build NODE APP for STAGING
+        steps:
+          - script: echo building NODE application
+            displayName: Building NODE APP
+          - script: echo running unit tests
+            displayName: Running unit tests
 
   - stage: BuildProd
     displayName: Build for PROD
     jobs:
       - job: BuildMobileApp
         displayName: Build MOBILE APP for PROD
+        steps:
+          - script: echo building MOBILE application
+            displayName: Building MOBILE APP
+          - script: echo running unit tests
+            displayName: Running unit tests
       - job: BuildReactApp
         displayName: Build REACT APP for PROD
+        steps:
+          - script: echo building REACT application
+            displayName: Building REACT APP
+          - script: echo running unit tests
+            displayName: Running unit tests  
       - job: BuildNodeApp
         displayName: Build NODE APP for PROD
+        steps:
+          - script: echo building NODE application
+            displayName: Building NODE APP
+          - script: echo running unit tests
+            displayName: Running unit tests
